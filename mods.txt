@@ -1,0 +1,10 @@
+# Modrinth mod list
+# One slug or project ID per line — find slugs at modrinth.com/mod/<slug>
+
+# Performance
+sodium
+lithium
+iris
+
+# Utilities
+fabric-api
