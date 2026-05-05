@@ -1,5 +1,6 @@
 # Modrinth mod list
-# One slug or project ID per line — find slugs at modrinth.com/mod/<slug>
+# One mod or project per line 
+# Mods / projects must be specified via either Slug or ID — find slugs at modrinth.com/mod/<slug>
 
 # Performance
 sodium
@@ -7,4 +8,4 @@ lithium
 iris
 
 # Utilities
-fabric-api
+P7dR8mSH #Fabric-api by ID
