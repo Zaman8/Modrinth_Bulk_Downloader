@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Modrinth Mod Downloader
-Reads mod IDs from a config file, MC version from CLI args.
+Modrinth Mod Bulk Downloader
+Reads mod list and downloads JAR files into ./mods folder
 """
 
 import json
@@ -12,9 +12,6 @@ import requests
 import configparser
 from pathlib import Path
 from tqdm import tqdm
-
-api_base = "https://api.modrinth.com/v2"
-headers = {"User-Agent": "my-server-mod-updater/1.0 zastiffler@gmail.com"}
 
 def load_config(config_path="config.ini"):
     """Load global config from an ini file."""
