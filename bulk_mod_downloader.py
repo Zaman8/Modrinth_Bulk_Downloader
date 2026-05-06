@@ -123,7 +123,7 @@ def sha512_of_file(path):
             h.update(chunk)
     return h.hexdigest()
 
-def download_mod(version_data, output_dir):
+def download_mod(version_data, output_dir, headers):
     """Download the primary jar file for a version."""
     files = version_data["files"]
     primary = next((f for f in files if f.get("primary")), files[0])
@@ -211,7 +211,7 @@ def main():
             if not version:
                 print(f"  ✗ No compatible version found for {args.mc_version} / {args.loader}")
                 continue
-            if download_mod(version, output_dir):
+            if download_mod(version, output_dir, headers):
                 updated += 1
         except Exception as e:
             print(f"  ✗ Error: {e}")
